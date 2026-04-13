@@ -120,10 +120,9 @@ const photoImgs = photoB64s.map(src => {
 
 const phrases = [
   'Lynnah', 'Happy Birthday', '21st April',
-  'I love you', 'You are my world',
-  'My favourite person', 'Always & Forever',
+  'I love you',
   'Lynnah ♡', 'Today is your day',
-  'So special', 'Beautiful soul', 'You mean everything'
+  'So special', 'Beautiful soul'
 ];
 
 // Each column can be text OR a photo
