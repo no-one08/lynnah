@@ -73,7 +73,12 @@ function enterPage() {
     document.getElementById('musicToggle').textContent = '⏸';
     document.getElementById('musicIcon').style.animationPlayState = 'running';
   }).catch(() => {});
-  setTimeout(() => { rainStarted = true; }, 800);
+  setTimeout(() => {
+    rainStarted = true;
+    setTimeout(() => {
+      document.getElementById('messageCard').classList.add('visible');
+    }, 1500);
+  }, 800);
 }
 
 function toggleMusic() {
@@ -120,9 +125,10 @@ const photoImgs = photoB64s.map(src => {
 
 const phrases = [
   'Lynnah', 'Happy Birthday', '21st April',
-  'I love you',
+  'I love you', 'You are my world',
+  'My favourite person', 'Always & Forever',
   'Lynnah ♡', 'Today is your day',
-  'So special', 'Beautiful soul'
+  'So special', 'Beautiful soul', 'You mean everything'
 ];
 
 // Each column can be text OR a photo
